@@ -1,0 +1,42 @@
+---
+title: "Template Title"
+author: "Your Name"
+date: "The Date"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+mainfont: PT Serif
+sansfont: Open Sans
+monofont: PT Mono
+editor_options:
+  chunk_output_type: console
+---
+
+```{r knitr_options, include=FALSE, message=FALSE}
+library(knitr)
+opts_chunk$set( fig.width=9, fig.height=6, include=TRUE, echo=FALSE, 
+                message = FALSE, warning = FALSE)
+```
+
+```{r packages}
+library(tidyverse)
+library(miscr)
+```
+
+```{r set_up_plot_list, include = FALSE}
+# create plot directory
+if (!dir.exists('plots')) {
+  dir.create('plots')
+}
+# and plot list
+plot_list <- list()
+```
+
+```{r for_adding_to_plot_list}
+plot_list <- add_to_plot_list(plot_list, plot, 
+                              filename = file.path('plots', 'plot.pdf'))
+```
+
+```{r output_plots}
+invisible( lapply(plot_list, output_plot, width = 7, height = 5) )
+```

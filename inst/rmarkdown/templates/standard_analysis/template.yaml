@@ -1,0 +1,4 @@
+name: Standard Analysis
+description: >
+   This template contains some boilerplate code for setting up options and a list of plots that are output at the end.
+create_dir: FALSE
