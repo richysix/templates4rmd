@@ -11,6 +11,8 @@ monofont: PT Mono
 editor_options:
   chunk_output_type: console
 ---
+\renewcommand{\familydefault}{\sfdefault}
+\sffamily
 
 ```{r knitr_options, include=FALSE, message=FALSE}
 library(knitr)
