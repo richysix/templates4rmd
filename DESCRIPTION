@@ -1,10 +1,10 @@
 Package: templates4rmd
 Type: Package
 Title: Template for Rmarkdown report
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: person("Richard", "White", email = "richard.white@sanger.ac.uk", role = c("aut", "cre"))
 Description: The template specfies fonts and has some boiler plate
-    code for having a list of plots that automaticlly gets output 
+    code for having a list of plots that automatically gets output 
     at the end.
 License: GPL-3
 Encoding: UTF-8
