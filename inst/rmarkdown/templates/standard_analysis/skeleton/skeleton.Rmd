@@ -1,18 +1,15 @@
 ---
 title: "Template Title"
 author: "Your Name"
-date: "The Date"
+date: "`r Sys.Date()`"
 output: 
   pdf_document:
     latex_engine: xelatex
-mainfont: PT Serif
-sansfont: Open Sans
-monofont: PT Mono
+mainfont: Roboto
+monofont: Inconsolata
 editor_options:
   chunk_output_type: console
 ---
-\renewcommand{\familydefault}{\sfdefault}
-\sffamily
 
 ```{r knitr_options, include=FALSE, message=FALSE}
 library(knitr)
