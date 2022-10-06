@@ -3,10 +3,12 @@ title: "Template Title"
 author: "Your Name"
 date: "`r Sys.Date()`"
 output: 
+  html_document: default
   pdf_document:
     latex_engine: xelatex
-mainfont: Roboto
-monofont: Inconsolata
+mainfont: Ubuntu
+sansfont: Ubuntu
+monofont: Courier New
 editor_options:
   chunk_output_type: console
 ---
